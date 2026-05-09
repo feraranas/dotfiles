@@ -1,0 +1,63 @@
+// Zed settings
+//
+// For information on how to configure Zed, see the Zed
+// documentation: https://zed.dev/docs/configuring-zed
+//
+// To see all of Zed's default settings without changing your
+// custom settings, run `zed: open default settings` from the
+// command palette (cmd-shift-p / ctrl-shift-p)
+{
+  "edit_predictions": {
+    "ollama": {
+      "max_output_tokens": 1000,
+      "model": "gemma4:latest",
+      "api_url": "http://localhost:11434",
+    },
+  },
+  "project_panel": {
+    "dock": "left",
+  },
+  "outline_panel": {
+    "dock": "right",
+  },
+  "collaboration_panel": {
+    "dock": "right",
+  },
+  "git_panel": {
+    "dock": "right",
+  },
+  "agent": {
+    "dock": "right",
+    "default_model": {
+      "provider": "anthropic",
+      "model": "claude-sonnet-4",
+      "enable_thinking": false,
+    },
+    "favorite_models": [],
+    "model_parameters": [],
+  },
+  "telemetry": {
+    "diagnostics": false,
+    "metrics": false,
+  },
+  "session": {
+    "trust_all_worktrees": true,
+  },
+  "agent_servers": {
+    "claude-acp": {
+      "type": "registry",
+    },
+    "your_agent": {
+      "type": "custom",
+      "command": "path_to_executable",
+    },
+  },
+  "base_keymap": "Cursor",
+  "ui_font_size": 16,
+  "buffer_font_size": 15,
+  "theme": {
+    "mode": "system",
+    "light": "One Light",
+    "dark": "One Dark",
+  },
+}
